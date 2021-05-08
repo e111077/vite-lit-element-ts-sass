@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "lit": "latest"
+    "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
