@@ -4,5 +4,5 @@
   padding: 16px;
   max-width: 800px;
   /* An overwritten CSS property */
-  border: dashed 1px gray;
+  border: dashed 5px green;
 }

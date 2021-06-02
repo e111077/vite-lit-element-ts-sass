@@ -2,6 +2,7 @@ import { html, TemplateResult } from 'lit';
 import './MyElement/my-element';
 import './extended-element/extended-element';
 import './double-extended-element/double-extended-element';
+import './ScssExample/scss-example';
 
 export default {
   title: 'Code Examples/LIT Class Extension',
@@ -42,4 +43,12 @@ export const DoubleExtendedElement = (): TemplateResult => {
 
 export const SimpleExample = (): TemplateResult => {
   return html` <my-element></my-element> `;
+};
+
+export const ScssExample = (): TemplateResult => {
+  return html`
+    <scss-example>
+      <p>This is an example for SCSS</p>
+    </scss-example>
+  `;
 };

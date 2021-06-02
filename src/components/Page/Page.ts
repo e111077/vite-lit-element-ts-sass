@@ -1,4 +1,4 @@
-import { html } from 'lit-html';
+import { html } from 'lit';
 import { Header } from '../Header/Header';
 import './page.css';
 
