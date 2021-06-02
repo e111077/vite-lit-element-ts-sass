@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit-Element App</title>
+    <script type="module">
+      import { MyElement } from '/dist/vite-lit-element-ts-sass.es.js'
+    </script>
+   
+  </head>
+  <body>
+    <my-element>
+      <p>This is an instance of &lt;my-element&gt;.</p>
+    </my-element>
+    <hr />
+    <extended-element>
+      <p>
+        This is &lt;extended-element&gt; that extends &lt;my-element&gt;. Notice
+        the original properties, name and count are updated, and additionally a
+        new property, containing text, displayed below.
+      </p>
+    </extended-element>
+    <hr />
+    <double-extended-element>
+      <p>
+        This is &lt;double-extended-element&gt; that extends
+        &lt;extended-element&gt;. Notice the original properties, name and count
+        are updated, and additionally a new property, containing text, displayed
+        below.
+      </p>
+    </double-extended-element>
+
+  </body>
+</html>
