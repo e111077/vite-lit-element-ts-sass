@@ -6,10 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit-Element App</title>
     <script type="module" src="/src/components/MyElement/my-element.ts"></script>
+    <script type="module" src="/src/components/extended-element/extended-element.ts"></script>
+    <script type="module" src="/src/components/double-extended-element/double-extended-element.ts"></script>
+
   </head>
   <body>
     <my-element>
-      <p>This is child content</p>
+      <p>This is an instance of &lt;my-element&gt;.</p>
     </my-element>
+    <hr />
+    <extended-element>
+      <p>
+        This is &lt;extended-element&gt; that extends &lt;my-element&gt;. Notice
+        the original properties, name and count are updated, and additionally a
+        new property, containing text, displayed below.
+      </p>
+    </extended-element>
+    <hr />
+    <double-extended-element>
+      <p>
+        This is &lt;double-extended-element&gt; that extends
+        &lt;extended-element&gt;. Notice the original properties, name and count
+        are updated, and additionally a new property, containing text, displayed
+        below.
+      </p>
+    </double-extended-element>
+
   </body>
 </html>

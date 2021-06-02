@@ -5,7 +5,8 @@ import litcss from 'rollup-plugin-postcss-lit';
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/my-element.ts',
+      // entry: 'src/components/MyElement/my-element.ts',
+      entry: 'src/components/double-extended-element/double-extended-element.ts',
       formats: ['es']
     },
     rollupOptions: {
