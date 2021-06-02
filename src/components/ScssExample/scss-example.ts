@@ -9,7 +9,7 @@ import { customElement, property } from 'lit/decorators.js';
  * @csspart button - The button
  */
 @customElement('scss-example')
-export class MyElement extends LitElement {
+export class ScssExample extends LitElement {
   static styles = styles;
 
   /**
@@ -45,6 +45,6 @@ export class MyElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'scss-example': MyElement
+    'scss-example': ScssExample
   }
 }
