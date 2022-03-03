@@ -3,7 +3,7 @@
 
 tasks:
   - name: terminal
-    prebuild: |
+    init: |
       yarn
     command: |
       yarn storybook
