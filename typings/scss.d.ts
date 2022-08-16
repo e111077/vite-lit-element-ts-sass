@@ -1,5 +1,11 @@
+declare module '*.scss?inline' {
+  import { CSSResult} from 'lit';
+  const styles: CSSResult;
+  export default styles;
+}
+
 declare module '*.scss' {
-  import { CSSResultGroup } from 'lit';
-  const styles: CSSResultGroup;
+  import { CSSResult} from 'lit';
+  const styles: CSSResult;
   export default styles;
 }

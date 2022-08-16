@@ -1,21 +1,20 @@
 import { defineConfig } from 'vite'
-import litcss from 'rollup-plugin-postcss-lit';
 
 // https://vitejs.dev/config/
+
+// Library build
 export default defineConfig({
   build: {
     lib: {
       entry: 'src/my-element.ts',
       formats: ['es']
     },
+    minify: false,
     rollupOptions: {
-      external: /^lit-element/,
+      external: /^lit/
     }
-  },
-  plugins: [
-    {
-      ...litcss(),
-      enforce: 'post'
-    }
-  ]
-})
+  }
+});
+
+// Application build
+// export default defineConfig({});
