@@ -6,6 +6,7 @@ This is an example [Vite](https://vitejs.dev/) project using [Lit 2](https://lit
 
 * `npm i -D sass`
 * Moved styles from `src/my-element.ts` to `src/my-element.scss` and imported them with `import styles from './my-element.scss?inline';`
+* Added typings for Sass files in [`/typings`](https://github.com/e111077/vite-lit-element-ts-sass/blob/master/typings/scss.d.ts)
 * Updated `vite.config.ts`
   * Changed library build to follow [WC best practices](https://justinfagnani.com/2019/11/01/how-to-publish-web-components-to-npm/)
   * Added a commented-out build for applications
